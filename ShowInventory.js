@@ -1,5 +1,5 @@
 
-function ShowInventory() {
+function showInventory() {
   var rawFile = new XMLHttpRequest();
   rawFile.open("GET","https://github.com/Renuliv/Javascript-Test/new/master/Rosethorne.json",false);
   rawFile.onreadystatechange = function() {
