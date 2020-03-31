@@ -1,5 +1,5 @@
 html{
-    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(Background.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)), url(Background.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-position:center 0;
@@ -24,20 +24,10 @@ h1{
     color:black;
 }
 
-p{
-    font-size: 2.7vw;
-    font-family: sans-serif;
-    margin-bottom: -.15em;
-    margin-top: -.15em;
-    color:darkcyan;
-    opacity:80%;
-    font-weight:bold;
-}
-
 hr {
-    height:1px;
-    border-bottom: 4px solid black;
-    overflow:hidden;
+    height: 0px;
+    border: 1vw outset grey;
+    overflow: hidden;
     width: 100%;
 }
 
@@ -54,14 +44,27 @@ form{
 }
 
 span {
-    padding: 10px;
-    border: 5px ridge silver;
+    font-size: 2.7vw;
+    font-family: sans-serif;
+    color: #009158;
+    opacity:80%;
+    font-weight:bold;
+    padding: 5px;
+    border: 2px groove #606d82;
     display: inline-block;
 }
 
 
-#Top{
+#Character{
     padding-bottom:15vh;
+}
+
+#Description{
+    padding-bottom:35vh;
+}
+
+#Stats{
+    padding-bottom:80vh;
 }
 
 #Bottom{
@@ -100,15 +103,16 @@ span {
 #InnerCharTabs{
     float:left;
     width:16.66%;
-    height:10vw;
+    height:15vw;
     text-align:center;
     padding-bottom:5vw;
+    padding-left: 10vw;
 }
 
 #InnerDescTabs{
     float:left;
     width:25%;
-    height:10vw;
+    height:15vw;
     text-align:center;
     padding-bottom:5vw;
 }
