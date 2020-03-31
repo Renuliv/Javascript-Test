@@ -1,90 +1,64 @@
 <html>
 
-<script id="BatteryScript" type="text/javascript">
-        function callStart() {
-            writeBattery();
-            refreshInventory();
-        }
+        <script type="text/javascript" src="https://github.com/Renuliv/Javascript-Test/edit/master/UpdateInventory.js"></script>
         
-        var battery = 0;
-        function clearBattery() {
-            battery = 100;
-            writeBattery();
-        }
-        function showBattery() {
-            alert(battery);
-        }
-        
-        function decreaseBattery() {
-            if (battery>0) {
-                battery=battery-10; 
-            } else { 
-                alert("the battery is at 0"); 
-            } 
-            writeBattery();
-        }
-        
-        function writeBattery() {
-            if (battery < 25) { 
-                document.getElementById("dot").style.backgroundColor = "#ff0000";
-            }
-            if (battery >= 25) {
-                document.getElementById("dot").style.backgroundColor = "#00cc00";
-            }
-            document.getElementById("BatteryPercent").innerHTML = battery;
-        }
-        
-        function changeInventory() {
-            var action = prompt("do you want to add or delete?","Hi");
-            if (action == "add") {
-                addition = prompt("What do you want to add?","1 coin");
-                Inventory.push(addition);
-                refreshInventory();
-            } else {
-                removal = prompt("What do you want to remove?","eggs");
-                Inventory = Inventory.filter(v => v !== removal);
-                refreshInventory();
-            }
-        }
-        
-        function refreshInventory() {
-            var rawFile = new XMLHttpRequest();
-            rawFile.open("GET", "Rosethorne.json", false);
-            rawFile.onreadystatechange = function() {
-                if (rawFile.readyState === 4) {
-                    if (rawFile.status === 200 || rawFile.status == 0) {
-                        var allText = rawFile.responseText;
-                        alert(allText);
-                    }
+        <script id="BatteryScript" type="text/javascript">
+                function callStart() {
+                    writeBattery();
                 }
-            }
-            document.getElementById("InventoryBasket").innerHTML = allText;
-        }
-    </script>
-    
-    
-    <body onload="callStart()">
-        
-        <p><a href="#" onClick="clearBattery();">Clear Battery</a></p>
-        <p><a href="#" onClick="showBattery();">Show Battery</a></p>
-        <p><a href="#" onClick="decreaseBattery();">Decrease Battery</a></p>
-        
-        <div id="BatteryPercent"></div>
-        <div class="dot" id="dot" style="height: 25px;
-            width: 25px;
-            background-color: #000000;
-            border-radius: 50%;
-            display: inline-block;"></div>
-            <!--
-            background-color: #ff0000;
-            background-color: #00cc00;
-            -->
-        
-        <br>
-        
-        <button id="changeInventory" onClick="changeInventory();">Change Inventory</button>
-        <div id="InventoryBasket"></div>
-    </body>
+
+                var battery = 0;
+                function clearBattery() {
+                    battery = 100;
+                    writeBattery();
+                }
+                function showBattery() {
+                    alert(battery);
+                }
+
+                function decreaseBattery() {
+                    if (battery>0) {
+                        battery=battery-10; 
+                    } else { 
+                        alert("the battery is at 0"); 
+                    } 
+                    writeBattery();
+                }
+
+                function writeBattery() {
+                    if (battery < 25) { 
+                        document.getElementById("dot").style.backgroundColor = "#ff0000";
+                    }
+                    if (battery >= 25) {
+                        document.getElementById("dot").style.backgroundColor = "#00cc00";
+                    }
+                    document.getElementById("BatteryPercent").innerHTML = battery;
+                }
+            </script>
+
+
+            <body onload="callStart()">
+
+                <p><a href="#" onClick="clearBattery();">Clear Battery</a></p>
+                <p><a href="#" onClick="showBattery();">Show Battery</a></p>
+                <p><a href="#" onClick="decreaseBattery();">Decrease Battery</a></p>
+
+                <div id="BatteryPercent"></div>
+                <div class="dot" id="dot" style="height: 25px;
+                    width: 25px;
+                    background-color: #000000;
+                    border-radius: 50%;
+                    display: inline-block;"></div>
+                    <!--
+                    background-color: #ff0000;
+                    background-color: #00cc00;
+                    -->
+
+                <br>
+
+                <button id="showInventory" onClick="showInventory();">Show Inventory</button>
+                <div id="InventoryBasket"></div>
+            </body>
 
 
 </html>
