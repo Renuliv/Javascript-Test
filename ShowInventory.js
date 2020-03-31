@@ -1,5 +1,6 @@
 
 function showInventory() {
+  alert("Hi!");
   var rawFile = new XMLHttpRequest();
   rawFile.open("GET","Rosethorne.json",false);
   rawFile.onreadystatechange = function() {
