@@ -132,6 +132,14 @@ span {
     padding-bottom:2vw;
 }
 
+#SpellSlotTabs{
+    float:left;
+    width:20%;
+    height:20vw;
+    text-align:center;
+    padding-bottom:5vw;
+}
+
 #SpellTabs{
     float:left;
     width:20%;
