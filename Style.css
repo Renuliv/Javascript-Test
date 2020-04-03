@@ -1,149 +1,104 @@
 html{
-    background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)), url(Background.jpg);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:center 0;
-    background-size:100% 100%;
     background-color:black;
-    width:100%;
-    max-width: inherit;
-    height:100%;
-    max-height: inherit;
-    margin:0px;
-    padding:0px;
-    overflow-x:hidden;
-    overflow-wrap: break-word;
+    background-image:url(References/Minnesota_River_Bank.JPG);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position:top;
+    background-size: 100% 80vh;
 }
-
-h1{
-    padding-top:2vh;
-    font-size: 3vw;
-    font-family:sans-serif;
-    margin-bottom: -.05em;
-    margin-top: .05em;
+body{
+    margin: 0;
+    border: 0;
+    color:white;
+}
+p{
+    color:white;
+    margin:30px;
+    border:30px;
+    text-align:center;
+    font-size:40px;
+}
+img{
     color:black;
+    height: 10vh;
 }
 
 hr {
-    height: 0px;
-    border: 1vw outset grey;
+    
+}
+
+
+#BigVoid {
+    width: 95vw;
+    margin: 0 auto;
+    float: center;
+    border: 1vh;
+    border-style: outset;
+    border-color: white;
     overflow: hidden;
-    width: 100%;
 }
 
-form{
-    position:fixed;
-    bottom:0px;
-    height:4vh;
-    width:2wh;
-    left:50%;
-    transform:translate(-50%,-50%);
+#HomeButton {
+    float: left;
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    border: 1vh;
+    border-style: outset;
+    padding: 2vh;
+}
+
+#Title {
+    color:white;
+    float: center;
+    text-align:center;
+    font-size:15vh;
+    height: 48vh;
+}
+
+#BottomTitle {
+    font-size: 4vh;
+    text-align:center;
+    height: 30vh;
+    float: center;
+    padding: 1vh;
+}
+
+#MiddleList {
+    font-size: 4vh;
+    color: aliceblue;
+    text-align:center;
     margin: 0 auto;
-    margin-top: 8vh;
-    margin-bottom: 2vh;
-}
-
-span {
-    font-size: 2.7vw;
-    font-family: sans-serif;
-    color: #009158;
-    opacity:80%;
-    font-weight:bold;
-    padding: 5px;
-    border: .5vw groove #2f364d;
-    display: inline-block;
+    width:32%;
+    float: center;
+    padding-bottom:4vh;
 }
 
 
-#Character{
-    padding-bottom:15vh;
-}
-
-#Description{
-    padding-bottom:35vh;
-}
-
-#Stats{
-    padding-bottom:80vh;
-}
-
-#Bottom{
+#LeftContact {
     bottom:0;
-    height:4vh;
-    left:50%;
+    text-align: center;
+    height:6vh;
+    width: 22%;
     margin: 0 auto;
+    float: left;
 }
 
-
-
-#MiddleLeft{
-    text-align:center;
-    float:left;
-    width:32%;
-    padding-bottom:4vh;
-}
-
-#MiddleCenter{
-    text-align:center;
+#MiddleContact {
+    bottom: 0;
+    text-align: center;
+    height: 6vh;
+    width: 22%;
     margin: 0 auto;
-    width:32%;
-    float:left;
-    padding-bottom:4vh;
+    float: center;
 }
 
-#MiddleRight{
-    text-align:center;
-    float:right;
-    width:32%;
-    padding-bottom:4vh;
-}
-
-
-
-#InnerCharTabs{
-    float:left;
-    width:16.66%;
-    height:15vw;
-    text-align:center;
-    padding-bottom:5vw;
-    padding-left: 10vw;
-}
-
-#InnerDescTabs{
-    float:left;
-    width:25%;
-    height:15vw;
-    text-align:center;
-    padding-bottom:5vw;
-}
-
-#InnerStatTabs{
-    float:left;
-    width:20%;
-    height:15vw;
-    text-align:center;
-    padding-bottom:5vw;
-}
-
-#InventoryTabs{
-    float:left;
-    width:100%;
-    text-align:center;
-    padding-bottom:2vw;
-}
-
-#SpellSlotTabs{
-    float:left;
-    width:20%;
-    height:20vw;
-    text-align:center;
-    padding-bottom:5vw;
-}
-
-#SpellTabs{
-    float:left;
-    width:20%;
-    height:50vw;
-    text-align:center;
-    padding-bottom:5vw;
+#RightContact {
+    bottom: 0;
+    text-align: center;
+    height: 6vh;
+    width: 22%;
+    margin: 0 auto;
+    float: right;
 }
