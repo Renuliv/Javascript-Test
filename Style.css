@@ -1,25 +1,32 @@
 html{
-    background-color:black;
-    background-image:url(References/Minnesota_River_Bank.JPG);
-    background-repeat: no-repeat;
+    background-color:      black;
+    background-image:      url(References/Minnesota_River_Bank.JPG);
+    background-repeat:     no-repeat;
     background-attachment: local;
-    background-position:top;
-    background-size: 100% 80vh;
+    background-position:   top;
+    background-size:       100% 70vh; 
 }
+
 body{
     margin: 0;
     border: 0;
-    color:white;
+    color:  white;
 }
+
+a {
+    color: inherit;
+}
+
 p{
-    color:white;
-    margin:30px;
-    border:30px;
-    text-align:center;
-    font-size:40px;
+    color:      white;
+    margin:     5vw;
+    border:     5vw;
+    text-align: center;
+    font-size:  5vh;
 }
+
 img{
-    color:black;
+    color:  black;
     height: 10vh;
 }
 
@@ -29,76 +36,122 @@ hr {
 
 
 #BigVoid {
-    width: 95vw;
-    margin: 0 auto;
-    float: center;
-    border: 1vh;
+    width:        95vw;
+    margin:       0 auto;
+    float:        center;
+    border:       1vh;
     border-style: outset;
     border-color: white;
-    overflow: hidden;
+    overflow:     hidden;
 }
 
 #HomeButton {
-    float: left;
-    text-align: center;
-    font-size: 4vh;
-    margin-top: 2vh;
-    margin-left: 5vh;
-    border: 1vh;
+    float:        left;
+    text-align:   center;
+    font-size:    3vh;
+    margin-top:   2vh;
+    margin-left:  2vh;
+    border:       1vh;
     border-style: outset;
-    padding: 2vh;
+    border-color: #B1B1B1;
+    padding:      2vh;
+    text-shadow:  .3vh .3vh 0 #000000, -.3vh .3vh 0 #000000,
+        .3vh -.3vh 0 #000000, -.3vh -.3vh 0 #000000,
+        .4vh 0 0 #000000, -.4vh 0 0 #000000,
+        0 .4vh 0 #000000, 0 -.4vh 0 #000000;
 }
 
 #Title {
-    color:white;
-    float: center;
-    text-align:center;
-    font-size:15vh;
-    height: 48vh;
+    color:       white;
+    float:       center;
+    text-align:  center;
+    padding-top: 7vh;
+    font-size:   25vh;
+    height:      25vh;
+    text-shadow: .3vh .3vh 0 #000000, -.3vh .3vh 0 #000000,
+        .3vh -.3vh 0 #000000, -.3vh -.3vh 0 #000000,
+        .4vh 0 0 #000000, -.4vh 0 0 #000000,
+        0 .4vh 0 #000000, 0 -.4vh 0 #000000;
 }
 
 #BottomTitle {
-    font-size: 4vh;
-    text-align:center;
-    height: 30vh;
-    float: center;
-    padding: 1vh;
+    font-size:   4vh;
+    text-align:  center;
+    height:      35vh;
+    float:       center;
+    padding:     1vh;
+    text-shadow: .3vh .3vh 0 #000000, -.3vh .3vh 0 #000000,
+        .3vh -.3vh 0 #000000, -.3vh -.3vh 0 #000000,
+        .4vh 0 0 #000000, -.4vh 0 0 #000000,
+        0 .4vh 0 #000000, 0 -.4vh 0 #000000;
+}
+
+#SideList {
+    font-size:      3vh;
+    color:          skyblue;
+    text-align:     center;
+    margin-left:    2vh;
+    width:          10%;
+    float:          left;
+    border:         1vh;
+    border-style:   outset;
+    border-color:   #B1B1B1;
+    padding:        1vh;
+}
+
+#Content {
+    font-size:      3vh;
+    color:          skyblue;
+    text-align:     center;
+    margin:         0 auto;
+    width:          100%;
+    float:          right;
+    padding-bottom: 4vh;
 }
 
 #MiddleList {
-    font-size: 4vh;
-    color: aliceblue;
-    text-align:center;
-    margin: 0 auto;
-    width:32%;
-    float: center;
-    padding-bottom:4vh;
+    font-size:      4vh;
+    color:          skyblue;
+    text-align:     center;
+    margin:         0 auto;
+    width:          32%;
+    float:          center;
+    padding-bottom: 4vh;
+}
+
+#InnerMiddleList {
+    font-size:      2vh;
+    color:          aliceblue;
+    text-align:     center;
+    margin:         0 auto;
+    width:          32%;
+    float:          center;
 }
 
 
 #LeftContact {
-    bottom:0;
+    bottom:     0;
     text-align: center;
-    height:6vh;
-    width: 22%;
-    margin: 0 auto;
-    float: left;
+    height:     6vh;
+    width:      30%;
+    float:      left;
 }
 
 #MiddleContact {
-    bottom: 0;
+    position:   absolute;
+    left:       0;
+    right:      0;
     text-align: center;
-    height: 6vh;
-    width: 22%;
-    margin: 0 auto;
-    float: center;
+    height:     6vh;
+    width:      30%;
+    margin:     auto;
+    float:      center;
 }
 
 #RightContact {
-    bottom: 0;
+    bottom:     0;
     text-align: center;
-    height: 6vh;
-    width: 22%;
-    margin: 0 auto;
-    float: right;
+    height:     6vh;
+    width:      30%;
+    float:      right;
 }
