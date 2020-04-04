@@ -1,0 +1,150 @@
+html{
+    background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)), url(Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center 0;
+    background-size:100% 100%;
+    background-color:black;
+    width:100%;
+    max-width: inherit;
+    height:100%;
+    max-height: inherit;
+    margin:0px;
+    padding:0px;
+    overflow-x:hidden;
+    overflow-wrap: break-word;
+}
+
+h1{
+    padding-top:2vh;
+    font-size: 3vw;
+    font-family:sans-serif;
+    margin-bottom: -.05em;
+    margin-top: .05em;
+    color:black;
+}
+
+hr {
+    height: 0px;
+    border: 1vw outset grey;
+    overflow: hidden;
+    width: 100%;
+}
+
+form{
+    position:fixed;
+    bottom:0px;
+    height:4vh;
+    width:2wh;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin: 0 auto;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+}
+
+span {
+    font-size: 2.7vw;
+    font-family: sans-serif;
+    color: #009158;
+    opacity:80%;
+    font-weight:bold;
+    padding: 5px;
+    border: .5vw groove #2f364d;
+    display: inline-block;
+}
+
+
+
+#Character{
+    padding-bottom:15vh;
+}
+
+#Description{
+    padding-bottom:35vh;
+}
+
+#Stats{
+    padding-bottom:80vh;
+}
+
+#Bottom{
+    bottom:0;
+    height:4vh;
+    left:50%;
+    margin: 0 auto;
+}
+
+
+
+#MiddleLeft{
+    text-align:center;
+    float:left;
+    width:32%;
+    padding-bottom:4vh;
+}
+
+#MiddleCenter{
+    text-align:center;
+    margin: 0 auto;
+    width:32%;
+    float:left;
+    padding-bottom:4vh;
+}
+
+#MiddleRight{
+    text-align:center;
+    float:right;
+    width:32%;
+    padding-bottom:4vh;
+}
+
+
+
+#InnerCharTabs{
+    float:left;
+    width:16.66%;
+    height:15vw;
+    text-align:center;
+    padding-bottom:5vw;
+    padding-left: 10vw;
+}
+
+#InnerDescTabs{
+    float:left;
+    width:25%;
+    height:15vw;
+    text-align:center;
+    padding-bottom:5vw;
+}
+
+#InnerStatTabs{
+    float:left;
+    width:20%;
+    height:15vw;
+    text-align:center;
+    padding-bottom:5vw;
+}
+
+#InventoryTabs{
+    float:left;
+    width:100%;
+    text-align:center;
+    padding-bottom:2vw;
+}
+
+#SpellSlotTabs{
+    float:left;
+    width:20%;
+    height:20vw;
+    text-align:center;
+    padding-bottom:5vw;
+}
+
+#SpellTabs{
+    float:left;
+    width:20%;
+    height:50vw;
+    text-align:center;
+    padding-bottom:5vw;
+}
