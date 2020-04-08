@@ -133,6 +133,32 @@ span {
     padding-bottom:2vw;
 }
 
+#InventoryAdder{
+    float: left;
+    font-size: 3vh;
+    width: 18vw;
+    height: 5vh;
+}
+
+#AddItemLabel{
+    float: left;
+    font-size: 5vh;
+    margin-left: 5vw;
+}
+
+#InventoryRemover{
+    float: right;
+    font-size: 3vh;
+    width: 18vw;
+    height: 5vh;
+}
+
+#RemoveItemLabel {
+    float: right;
+    font-size: 5vh;
+    margin-right: 5vw;
+}
+
 #SpellSlotTabs{
     float:left;
     width:20%;
